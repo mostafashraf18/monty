@@ -38,4 +38,18 @@ typedef struct instruction_s
 	char *opcode;
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+/**
+ * struct keep_s - keep the value on global
+ * @arg: value
+ * @file: pointer to monty file
+ * @matrial: line content
+ * @ch_fl: flag change stack to queue
+ */
+typedef struct carry_s
+{
+	char *arg;
+	FILE *file;
+	char *matrial;
+	int ch_fl;
+} carry_t;
+extern carry_t carry;
