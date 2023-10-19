@@ -52,4 +52,8 @@ typedef struct carry_s
 	int ch_fl;
 } carry_t;
 extern carry_t carry;
+
+void _push(stack_t **h_ptr, unsigned int num);
+void _pall(stack_t **h_ptr, unsigned int num);
+int execute(char *matrial, stack_t **h_ptr, unsigned int num, FILE *file);
 #endif
