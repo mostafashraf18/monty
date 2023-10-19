@@ -1,15 +1,15 @@
 #include "monty.h"
 carry_t carry = {NULL, NULL, NULL, 0};
 /**
- * main - monty code interpreter
- * @argc: number of arguments
- * @argv: arguments vector
- * Return: 0 on success
- */
+* main - monty code interpreter
+* @argc: number of arguments
+* @argv: arguments vector
+* Return: 0 on success
+*/
 int main(int argc, char *argv[])
 {
 	char *input;
-	size_t size_line = 0;
+size_t size_line = 0;
 	ssize_t read_line = 1;
 	FILE *filename;
 	stack_t *stack = NULL;
@@ -72,8 +72,9 @@ int execute(char *codeline, stack_t **stack, unsigned int counter, FILE *fname)
 				{"stack", _stack},
 				{NULL, NULL}
 				};
+
 	char *opcodestr;
-	unsigned int index = 0;
+unsigned int index = 0;
 	opcodestr = strtok(codeline, " \n\t");
 	if (opcodestr && opcodestr[0] == '#')
 		return (0);
@@ -91,8 +92,6 @@ int execute(char *codeline, stack_t **stack, unsigned int counter, FILE *fname)
 		fclose(fname);
 		free(codeline);
 		stack_free(*stack);
-		exit(EXIT_FAILURE);
-	}
+		exit(EXIT_FAILURE); }
 	return (1);
 }
-

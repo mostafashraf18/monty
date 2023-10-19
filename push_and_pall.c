@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * _push - add element to the stack
+ * _push - add or push an element to the stack
  * @h_ptr: stack head pointer
  * @num: intiger line counter
  * Return: void
@@ -10,7 +10,7 @@ void _push(stack_t **h_ptr, unsigned int num)
 {
 	int n, i = 0, z = 0;
 
-	if (carry,arg)
+	if (carry.arg)
 	{
 		if (carry.arg[0] == '-')
 			i++;
