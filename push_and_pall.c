@@ -4,7 +4,7 @@
  * _push - add or push an element to the stack
  * @h_ptr: stack head pointer
  * @num: intiger line counter
- * Return: void
+ * Return: void.
  */
 void _push(stack_t **h_ptr, unsigned int num)
 {
@@ -49,7 +49,7 @@ void _push(stack_t **h_ptr, unsigned int num)
  * _pall - prints all the values on the stack
  * @h_ptr: stack head pointer
  * @num: intuger
- * Return: void
+ * Return: void.
  */
 void _pall(stack_t **h_ptr, unsigned int num)
 {

@@ -2,7 +2,7 @@
 /**
   *_sub- substraction
   *@head: head of stack
-  *@counter: linenumber
+  *@counter: linenumber.
  */
 void _sub(stack_t **head, unsigned int counter)
 {
@@ -30,7 +30,7 @@ stack_t *aux;
 /**
  * _swap - swap the top two elements of the stack
  * @head: head
- * @counter: line number
+ * @counter: line number.
  */
 void _swap(stack_t **head, unsigned int counter)
 {

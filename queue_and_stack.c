@@ -1,10 +1,10 @@
 #include "monty.h"
 
 /**
- * _stack -  sets the format of the data to a stack (LIFO)
+ * _stack - sets the format of the data to a stack (LIFO)
  * @h_ptr: stack head pointer
  * @num: intiger line counter
- * Return: void
+ * Return: void.
  */
 void _stack(stack_t **h_ptr, unsigned int num)
 {
@@ -17,7 +17,7 @@ void _stack(stack_t **h_ptr, unsigned int num)
  * _queue - sets the format of the data to a queue (FIFO)
  * @h_ptr: stack head pointer
  * @num: intiger line counter
- * Return: void
+ * Return: void.
  */
 void _queue(stack_t **h_ptr, unsigned int num)
 {
@@ -29,7 +29,7 @@ void _queue(stack_t **h_ptr, unsigned int num)
 /**
  * stack_free - frees a doubly linked list
  * @h_ptr: head of the stack
- * Return: void
+ * Return: void.
  */
 void stack_free(stack_t *h_ptr)
 {
@@ -79,5 +79,3 @@ void queue_add(stack_t **h_ptr, int n)
 		new_n->prev = a;
 	}
 }
-
-
